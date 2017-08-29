@@ -61,9 +61,9 @@ Usage examples:
     parser.add_argument('-S', '--string', nargs='?', help='For multiple words, use ""')
     parser.add_argument('-d', '--decode', action='store_true', help='Decode Hash')
     parser.add_argument('-e', '--encode', action='store_true', help='Encode String')
-    parser.add_argument('--md5', action='store_true', help='SSLv2 (CVE-2011-1473) (CVE-2016-0800)')
-    parser.add_argument('--rot13', action='store_true', help='SSLv2 (CVE-2011-1473) (CVE-2016-0800)')
-    parser.add_argument('--base64', action='store_true', help='Encrypt:  python3 ConvertCrypt.py -S "String to Encrypt" --base64 -e')
+    parser.add_argument('--md5', action='store_true', help='Encrypt/Decrypt MD5')
+    parser.add_argument('--rot13', action='store_true', help='Encrypt/Decrypt ROT13')
+    parser.add_argument('--base64', action='store_true', help='Encrypt/Decrypt BASE64')
     parser.add_argument('--version', action='version', version='%(prog)s 0.0.1')
     args = parser.parse_args()
 
